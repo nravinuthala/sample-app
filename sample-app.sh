@@ -39,6 +39,6 @@ docker build -t sampleapp . --no-cache
 docker rm -f samplerunning 2>/dev/null || true
 
 # Run container
-docker run -d -p 8080:8080 --name samplerunning sampleapp
+docker run -d -p 8088:8080 --name samplerunning sampleapp
 
 docker ps -a
