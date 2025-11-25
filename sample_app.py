@@ -3,7 +3,11 @@ from flask import Flask
 from flask import request
 from flask import render_template
 
-sample = Flask(__name__)
+sample = Flask(
+    __name__,
+    template_folder="templates",
+    static_folder="static"
+)
 
 @sample.route("/")
 def main():
